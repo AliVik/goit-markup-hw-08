@@ -1,0 +1,37 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+// BASE
+@import "./base/styles-reset";
+@import "./base/body";
+@import "./base/container";
+@import "./base/sections";
+
+// COMPONENTS
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/headers";
+
+// LAYOUT
+@import "./layout/page-header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/we-do";
+@import "./layout/team";
+@import "./layout/regular-customers";
+@import "./layout/footer";
+@import "./layout/modal-window";
+@import "./layout/modal-form";
+
+/*Портфолио стили*/
+
+// UTILS
+// BASE
+// COMPONENTS
+// LAYOUT
+@import "./layout/portfolio-header";
+@import "./layout/portfolio-page";

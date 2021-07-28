@@ -1,0 +1,138 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: #2f303a;
+  background-position: center;
+  max-height: 252px;
+}
+.footer__flex-contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__logo-text--change {
+  color: $main-white-color;
+}
+
+.footer__direction {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.footer__address {
+  display: block;
+  color: $main-white-color;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.footer__contacts {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer__join-text {
+  @extend %white-uppercase-text;
+}
+
+.footer__icons-list {
+  display: flex;
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.footer__social-icons-item {
+  @include flex(center);
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  flex-basis: calc((100%-40px) / 4);
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+.footer__social-link {
+  @include flex(center);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $main-white-color;
+  transition: background-color $time $timing-function,
+    fill $time $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $extra-color;
+    fill: $main-white-color;
+  }
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.sign-up {
+  margin-left: 93px;
+}
+
+.sign-up__text {
+  @extend %white-uppercase-text;
+}
+
+.sign-up__telegram {
+  @include flex(center, baseline);
+}
+
+.sign-up__input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  color: $main-white-color;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.sign-up__button {
+  @include flex(center);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+}
+
+.sign-up__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

@@ -1,0 +1,135 @@
+.modal-form {
+  padding: 40px;
+  border: none;
+  margin: 0;
+}
+.modal-form__text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.modal-form__list-item {
+  textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-form__label-text {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
+.modal-form__relative-input {
+  position: relative;
+}
+
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  padding-left: 42px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border $time $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $extra-color;
+    border-radius: 4px;
+
+    ~ .modal-form__icons {
+      fill: $extra-color;
+    }
+  }
+}
+.modal-form__icons {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill $time $timing-function;
+}
+
+.modal-form__comment-area {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $extra-color;
+    border-radius: 4px;
+  }
+}
+
+.modal-form__send-butt {
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  margin: 30px auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.policy-checkbox__text {
+  @include flex(center);
+  font-size: 14px;
+  line-height: 1.7;
+  color: $secondary-text-color;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 8.38px;
+    background-image: url(../images/vector.svg);
+    width: 16px;
+    height: 15px;
+    transition: background-image $time $timing-function;
+  }
+}
+
+.policy-checkbox {
+  margin-top: 20px;
+}
+.policy-checkbox__input:checked + .policy-checkbox__text::before {
+  background-image: url(../images/icon-check.svg);
+}
+
+.policy-checkbox__input:focus:not(:checked) + .policy-checkbox__text::before {
+  outline: 2px solid #000;
+  outline-offset: 5px;
+  outline-style: groove;
+}
+
+.policy-checkbox__link {
+  color: $extra-color;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 4px;
+    background-color: $extra-color;
+  }
+}

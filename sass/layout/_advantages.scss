@@ -1,0 +1,30 @@
+.advantage-section {
+  padding-top: 65px;
+}
+.advantage-section__thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: $secondary-color;
+  margin-bottom: 30px;
+}
+.advantage-section__list {
+  @extend %flex-list;
+}
+.advantage-section__item {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+.advantage-section__icons {
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin: 0 auto;
+}
+.advantage-section__text {
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $secondary-text-color;
+}
