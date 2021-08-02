@@ -12,7 +12,7 @@
 
 <body>
     <!-- Шапка -->
-        <header class="header-padding">
+        <!-- <header class="header-padding">
             <div class="header-flex container">
                 <nav class="navigation">
                     <a href="./index.html" class="navigation__logo">
@@ -23,6 +23,10 @@
                         <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                         <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
                     </ul>
+
+                    <svg class="navigation__burger-menu">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
                 </nav>
                 
                     <ul class="auth-list">
@@ -44,7 +48,7 @@
                             </li>
                     </ul>
             </div>
-        </header>
+        </header> -->
         <!-- Основной контент страницы Студия-->
         <main>
             <!-- Hero -->
@@ -65,7 +69,7 @@
                                 <use href="./images/icons.svg#icon-anten"></use>
                             </svg>
                         </div>
-                        <h3 class="secondary-headers">Внимание к деталям</h3>
+                        <h3 class="secondary-headers advantage-headers">Внимание к деталям</h3>
                         <p class="advantage-section__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="list advantage-section__item">
@@ -74,7 +78,7 @@
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="secondary-headers">Пунктуальность</h3>
+                        <h3 class="secondary-headers advantage-headers">Пунктуальность</h3>
                         <p class="advantage-section__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="list advantage-section__item">
@@ -83,7 +87,7 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="secondary-headers">Планирование</h3>
+                        <h3 class="secondary-headers advantage-headers">Планирование</h3>
                         <p class="advantage-section__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="list advantage-section__item">
@@ -92,7 +96,7 @@
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="secondary-headers">Современные технологии</h3>
+                        <h3 class="secondary-headers advantage-headers">Современные технологии</h3>
                         <p class="advantage-section__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
@@ -104,27 +108,56 @@
                     <h2 class="main-headers">Чем мы занимаемся</h2>
                     <ul class="we-do__list">
                         <li class="list we-do__item">
-                            <img src="./images/box1.jpg" alt="написание кода" width="370" height="294" class="we-do__img">
+                            <picture>
+                                <source srcset="./images/desktop-coding.webp 1x, ./images/desktop-coding@2x.webp 2x" type="image/webp">
+                                <source srcset="./images/desktop-coding.jpg 1x, ./images/desktop-coding@2x.jpg 2x">
+                                <img src="./images/desktop-coding.jpg" alt="написание кода" width="370" height="294" class="we-do__img">
+                            </picture>
+                            
                             <p class="we-do__overlay-bg"><span class="we-do__text">Десктопные приложения</span></p>
                         </li>
                         <li class="list we-do__item">
-                            <img src="./images/box2.jpg" alt="подбор дизайна" width="370" height="294" class="we-do__img">
+                            <picture>
+                                <source srcset="./images/desktop-positioning.webp 1x, ./images/desktop-positioning@2x.webp 2x" type="image/webp">
+                                <source srcset="./images/desktop-positioning.jpg 1x, ./images/desktop-positioning@2x.jpg 2x">
+                                <img src="./images/desktop-positioning.jpg" alt="подбор дизайна"  class="we-do__img">
+                            </picture>
+                            
                             <p class="we-do__overlay-bg"><span class="we-do__text">Мобильные приложения</span></p>
                         </li>
                         <li class="list we-do__item">
-                            <img src="./images/box3.jpg" alt="согласование цветовой палитры" width="370" height="294" class="we-do__img">
+                            <picture>
+                                <source srcset="./images/desktop-design.webp 1x, ./images/desktop-design@2x.webp 2x" type="image/webp">
+                                <source srcset="./images/desktop-design.jpg 1x, ./images/desktop-design@2x.jpg 2x">
+                                <img src="./images/desktop-design.jpg" alt="согласование цветовой палитры" width="370" height="294" class="we-do__img">
+                            </picture>
+                            
                             <p class="we-do__overlay-bg"><span class="we-do__text">Дизайнерские решения</span></p>
                         </li>
                     </ul>
                 </div>
             </section>
             <!-- Наша команда -->
-            <section class="section">
+            <section class="section team-section">
                 <div class="container">
                     <h2 class="main-headers">Наша команда</h2>
                     <ul class="team list">
                         <li class="team__name-card">
-                            <img src="./images/img.jpg" alt="дизайнер продукта" width="270" height="260" class="team__img"> 
+                            <picture>
+                                
+                                <source media="(min-width:1200px)" srcset="./images/desktop-demyanenko.webp 1x, ./images/desktop-demyanenko@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:1200px)" srcset="./images/desktop-demyanenko.jpg 1x, ./images/desktop-demyanenko@2x.jpg 2x">
+                                
+                                <source media="(min-width:768px)" srcset="./images/tablet-demyanenko.webp 1x, ./images/tablet-demyanenko@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:768px)" srcset="./images/tablet-demyanenko.jpg 1x, ./images/tablet-demyanenko@2x.jpg 2x">
+                                
+                                <source media="(min-width:280px)" srcset="./images/mobile-demyanenko.webp 1x, ./images/mobile-demyanenko@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:280px)" srcset="./images/mobile-demyanenko.jpg 1x, ./images/mobile-demyanenko@2x.jpg 2x">
+                                
+                                
+                                <img src="./images/tablet-demyanenko.jpg" alt="дизайнер продукта" class="team__img">
+                            </picture>
+                            
                             <div class="team__name-description">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
                                 <p class="team__position">Product designer</p>
@@ -161,7 +194,21 @@
                            </div>
                         </li>
                         <li class="team__name-card">
-                            <img src="./images/img3.jpg" alt="фронтенд разработчик" width="270" height="260" class="team__img">
+                            <picture>
+                                
+                                <source media="(min-width:1200px)" srcset="./images/desktop-repina.webp 1x, ./images/desktop-repina@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:1200px)" srcset="./images/desktop-repina.jpg 1x, ./images/desktop-repina@2x.jpg 2x">
+                                
+                                <source media="(min-width:768px)" srcset="./images/tablet-repina.webp 1x, ./images/tablet-repina@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:768px)" srcset="./images/tablet-repina.jpg 1x, ./images/tablet-repina@2x.jpg 2x">
+                                
+                                <source media="(min-width:280px)" srcset="./images/mobile-repina.webp 1x, ./images/mobile-repina@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:280px)" srcset="./images/mobile-repina.jpg 1x, ./images/mobile-repina@2x.jpg 2x">
+                                                    
+                                                    
+                                <img src="./images/tablet-repina.jpg" alt="фронтенд разработчик" class="team__img">
+                            </picture>
+                            
                             <div class="team__name-description">
                                 <h3 class="team__name">Ольга Репина</h3>
                                 <p class="team__position">Frontend Developer</p>
@@ -198,7 +245,21 @@
                             </div>
                         </li>
                         <li class="team__name-card">
-                            <img src="./images/img1.jpg" alt="маркетолог" width="270" height="260" class="team__img">
+                            <picture>
+                               
+                                <source media="(min-width:1200px)" srcset="./images/desktop-tarasov.webp 1x, ./images/desktop-tarasov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:1200px)" srcset="./images/desktop-tarasov.jpg 1x, ./images/desktop-tarasov@2x.jpg 2x">
+                                
+                                <source media="(min-width:768px)" srcset="./images/tablet-tarasov.webp 1x, ./images/tablet-tarasov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:768px)" srcset="./images/tablet-tarasov.jpg 1x, ./images/tablet-tarasov@2x.jpg 2x">
+                                
+                                <source media="(min-width:280px)" srcset="./images/mobile-tarasov.webp 1x, ./images/mobile-tarasov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:280px)" srcset="./images/mobile-tarasov.jpg 1x, ./images/mobile-tarasov@2x.jpg 2x">
+                            
+                            
+                                <img src="./images/tablet-tarasov.jpg" alt="маркетолог" class="team__img">
+                            </picture>
+                           
                             <div class="team__name-description">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p class="team__position">Marketing</p>
@@ -235,7 +296,21 @@
                             </div>
                         </li>
                         <li class="team__name-card">
-                            <img src="./images/img2.jpg" alt="дизайнер интерфейса" width="270" height="260" class="team__img">
+                            <picture>
+                                
+                                <source media="(min-width:1200px)" srcset="./images/desktop-ermakov.webp 1x, ./images/desktop-ermakov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:1200px)" srcset="./images/desktop-ermakov.jpg 1x, ./images/desktop-ermakov@2x.jpg 2x">
+                                
+                                <source media="(min-width:768px)" srcset="./images/tablet-ermakov.webp 1x, ./images/tablet-ermakov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:768px)" srcset="./images/tablet-ermakov.jpg 1x, ./images/tablet-ermakov@2x.jpg 2x">
+                                
+                                <source media="(min-width:280px)" srcset="./images/mobile-ermakov.webp 1x, ./images/mobile-ermakov@2x.webp 2x" type="image/webp">
+                                <source media="(min-width:280px)" srcset="./images/mobile-ermakov.jpg 1x, ./images/mobile-ermakov@2x.jpg 2x">
+                            
+                            
+                                <img src="./images/tablet-ermakov.jpg" alt="маркетолог" class="team__img">
+                            </picture>
+                           
                             <div class="team__name-description">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p class="team__position">UI Designer</p>
@@ -327,7 +402,7 @@
             </section>
         </main>
         <!-- Подвал -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container footer__flex-contacts">
                 <div>
                     <a href="./index.html" class="navigation__logo link">
@@ -387,11 +462,11 @@
                 </form>
 
             </div>
-        </footer>
+        </footer> -->
     
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" class="modal-window__close-butt" data-modal-close>
                 <svg class="modal-window__close-icon">
@@ -449,7 +524,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-       
+        -->
 </body>
 
 </html>
