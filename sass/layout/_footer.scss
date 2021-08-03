@@ -1,18 +1,43 @@
 .footer {
-  padding-bottom: 60px;
   padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
   background-position: center;
-  max-height: 252px;
+  max-height: 603px;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 252px;
+  }
 }
 .footer__flex-contacts {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+.footer__flex-contacts--tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .footer__logo {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__logo-text--change {
@@ -23,33 +48,57 @@
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__address {
   display: block;
   color: $main-white-color;
   text-decoration: none;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer__contacts {
-  display: block;
+.footer__contacts-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-bottom: 9px;
+}
+.footer__contacts {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__join {
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
+
+  @media screen and (max-width: 767px) {
+    margin: 60px auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer__join-text {
   @extend %white-uppercase-text;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    align-self: center;
+  }
 }
 
 .footer__icons-list {
@@ -95,22 +144,48 @@
 }
 
 .sign-up {
-  margin-left: 93px;
+  max-width: 450px;
+
+  @media screen and (max-width: 767px) {
+    @include flex(center);
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: 60px auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    max-width: 570px;
+  }
 }
 
 .sign-up__text {
   @extend %white-uppercase-text;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+  }
 }
 
 .sign-up__telegram {
-  @include flex(center, baseline);
+  @media screen and (max-width: 1199px) {
+    @include flex(center);
+    flex-direction: column;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex(center, baseline);
+    margin-top: 20px;
+  }
 }
 
 .sign-up__input {
-  width: 358px;
   height: 50px;
-  margin-top: 20px;
-  margin-right: 12px;
+
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -120,6 +195,14 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
