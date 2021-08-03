@@ -12,7 +12,7 @@
 
 <body>
     <!-- Шапка -->
-        <!-- <header class="header-padding">
+        <header class="header-padding">
             <div class="header-flex container">
                 <nav class="navigation">
                     <a href="./index.html" class="navigation__logo">
@@ -23,10 +23,12 @@
                         <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                         <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
                     </ul>
-
-                    <svg class="navigation__burger-menu">
-                        <use href="./images/icons.svg#icon-burger"></use>
-                    </svg>
+                    <button type="button" class="navigation__burger-menu">
+                        <svg class="navigation__burger-menu-icon">
+                            <use href="./images/icons.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                    
                 </nav>
                 
                     <ul class="auth-list">
@@ -48,7 +50,36 @@
                             </li>
                     </ul>
             </div>
-        </header> -->
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu__close-button">
+                    <svg class="mobile-menu__icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-navigation navigation">
+                    <ul class="mobile-nav-list nav-list">
+                        <li class="nav-list__item list"><a href="" class="nav-list__link">Студия</a></li>
+                        <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
+                        <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="mobile-auth-list auth-list">
+                    <li class="auth-list__contacts list">
+                        <a href="tel:+380961111111" class="auth-list__link auth-list__link--mob">+38 096 111 11 11</a>
+                    </li>
+                    <li class="auth-list__contacts list">
+                        <a href="mailto:info@devstudio.com" class="auth-list__link">info@devstudio.com</a>
+                    </li>
+                   
+                </ul>
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item list"><a href="" class="mobile-social-link">Instagram</a></li>
+                    <li class="mobile-social-item list"><a href="" class="mobile-social-link">Twitter</a></li>
+                    <li class="mobile-social-item list"><a href="" class="mobile-social-link">Facebook</a></li>
+                    <li class="mobile-social-item list"><a href="" class="mobile-social-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </header>
         <!-- Основной контент страницы Студия-->
         <main>
             <!-- Hero -->
