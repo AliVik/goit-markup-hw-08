@@ -23,9 +23,9 @@
                         <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                         <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
                     </ul>
-                    <button type="button" class="navigation__burger-menu">
-                        <svg class="navigation__burger-menu-icon">
-                            <use href="./images/icons.svg#icon-burger"></use>
+                    <button type="button" class="burger-menu" data-menu-open>
+                        <svg class="burger-menu__icon">
+                            <use href="./images/icons.svg#icon-burger" class="burger-menu__icon-item"></use>
                         </svg>
                     </button>
                     
@@ -50,15 +50,15 @@
                             </li>
                     </ul>
             </div>
-            <div class="mobile-menu">
-                <button type="button" class="mobile-menu__close-button">
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="mobile-menu__close-button" data-menu-close>
                     <svg class="mobile-menu__icon">
-                        <use href="./images/icons.svg#icon-close"></use>
+                        <use href="./images/icons.svg#icon-close" class="mobile-menu__icon-cross"></use>
                     </svg>
                 </button>
                 <nav class="mobile-navigation navigation">
                     <ul class="mobile-nav-list nav-list">
-                        <li class="nav-list__item list"><a href="" class="nav-list__link">Студия</a></li>
+                        <li class="nav-list__item list"><a href="" class="nav-list__link nav-list__link--current">Студия</a></li>
                         <li class="nav-list__item list"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                         <li class="nav-list__item list"><a href="" class="nav-list__link">Контакты</a></li>
                     </ul>
@@ -558,8 +558,10 @@
            </form>
         </div>
     </div>
+    
     <script src="./js/modal.js"></script>
         -->
+        <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
