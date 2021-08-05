@@ -90,14 +90,16 @@
 
 .policy-checkbox__text {
   display: flex;
+  align-content: center;
   color: $secondary-text-color;
 
   &::before {
     content: "";
     display: block;
-    align-self: center;
     margin-right: 8.38px;
     background-image: url(../images/vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 16px;
     height: 15px;
     transition: background-image $time $timing-function;
