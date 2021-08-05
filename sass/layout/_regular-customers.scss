@@ -2,7 +2,7 @@
   @include flex(start);
   margin: 0 auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-wrap: wrap;
     max-width: 450px;
   }
@@ -15,13 +15,21 @@
     max-width: 1170px;
   }
 }
-
+.regular-customers__list {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
 .regular-customers__item {
   display: flex;
   height: 92px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     max-width: 210px;
-    max-height: 92px;
+
     flex-basis: calc((100%-30px) / 2);
 
     &:not(:nth-child(2n)) {
