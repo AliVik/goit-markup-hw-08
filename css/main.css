@@ -123,11 +123,19 @@ body {
 }
 
 .main-headers {
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-headers {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .secondary-headers {
@@ -585,6 +593,12 @@ body {
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantage-section__list {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
