@@ -13,6 +13,9 @@
   margin-bottom: 30px;
 }
 .advantage-section__list {
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
