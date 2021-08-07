@@ -132,6 +132,16 @@
   color: $secondary-text-color;
   text-decoration: none;
   letter-spacing: 0.02em;
+  @extend %link;
+
+  &:hover,
+  &:focus .auth-list__icon-letter {
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus .auth-list__icon-tel {
+    fill: currentColor;
+  }
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 1.17;
