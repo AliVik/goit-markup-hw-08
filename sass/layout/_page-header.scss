@@ -150,6 +150,7 @@
     font-size: 12px;
     line-height: 1.17;
     @include flex(start);
+    padding: 0;
   }
 
   @media screen and (min-width: 1200px) {
