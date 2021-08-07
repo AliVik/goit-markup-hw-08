@@ -621,6 +621,7 @@ body {
 .advantage-section__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 480px) {
@@ -632,7 +633,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantage-section__item {
     max-width: 354px;
-    margin-bottom: 30px;
     margin-left: 30px;
   }
   .advantage-section__item:nth-child(2n + 1) {
