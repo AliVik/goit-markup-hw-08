@@ -132,7 +132,6 @@
   color: $secondary-text-color;
   text-decoration: none;
   letter-spacing: 0.02em;
-  @extend %link;
 
   &:hover,
   &:focus .auth-list__icon-letter {
@@ -150,7 +149,6 @@
     font-size: 12px;
     line-height: 1.17;
     @include flex(start);
-    padding: 0;
   }
 
   @media screen and (min-width: 1200px) {
