@@ -197,6 +197,9 @@
 .mobile-menu {
   @media screen and (max-width: 767px) {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 1000;
     left: 0;
     top: 0;
@@ -243,9 +246,9 @@
     display: block;
     font-size: 40px;
     line-height: 1.18;
-    margin-bottom: 306px;
   }
 }
+
 .mobile-nav-list {
   @media screen and (max-width: 767px) {
     display: block;
