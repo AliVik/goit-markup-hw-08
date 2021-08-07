@@ -107,11 +107,11 @@
     height: 15px;
     transition: background-image $time $timing-function;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 320px) {
       margin-right: 8px;
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 320px) {
     font-size: 12px;
     line-height: 1.17;
     white-space: nowrap;
