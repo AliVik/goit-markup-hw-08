@@ -134,13 +134,10 @@
   letter-spacing: 0.02em;
 
   &:hover,
-  &:focus .auth-list__icon-letter {
-    fill: currentColor;
+  &:focus {
+    color: $extra-color;
   }
-  &:hover,
-  &:focus .auth-list__icon-tel {
-    fill: currentColor;
-  }
+
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 1.17;
